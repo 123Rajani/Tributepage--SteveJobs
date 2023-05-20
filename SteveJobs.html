@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tribute Page</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+});
+</script>
+<style>
+  #myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #51c1e3;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform: scale(0.1)} 
+  to {transform: scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #5ae7e0;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #6b6767;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+  <!--Responsive Image Gallery--
+  div.gallery {
+  border: 1px solid #988787;
+}
+
+div.gallery:hover {
+  border: 1px solid #61a597;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  background-color: #366d6b;
+  border: solid 1px black;
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+}
+
+.table1 {
+   width: 100%;
+   text-align: center;
+}
+pre{
+  font-size: 30px;
+}
+ol {
+  background:#a9b5b5;
+  padding: 20px;
+
+}
+ol li {
+  background: #9086b5;
+  color: black;
+  padding: 5px;
+  margin-left: 35px;
+}
+/* Style the footer */
+footer {
+  background-color: #3969a8;
+  padding: 10px;
+  text-align: center;
+  color: rgb(5, 6, 8);
+  width: 100%;
+}
+</style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td style="padding-top: 20px; padding-bottom: 20px; padding-left: 20px; padding-right: 20px;"><img id="myImg" src="2.jpg" alt="Steve Jobs" width="600" height="500">
+        <!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div><br><br>
+      <div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="1.jpg">
+      <img src="1.jpg" alt="Cinque Terre" width="60" height="40">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="3.jfif">
+      <img src="3.jfif" alt="Cinque Terre" width="60" height="40">
+    </a>
+  </div>
+</div>
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="4.jfif">
+      <img src="4.jfif" alt="Cinque Terre" width="60" height="40">
+    </a>
+  </div>
+</div>
+</td>
+      <td style="padding-top: 10px; padding-bottom: 20px; padding-left: 60px; padding-right: 50px;" ><p style="font-size:35px;">"Your work is going to fill a large part of your life, and the only way to be truly satisfied is to do what you believe is great work. And the only way to do great work is to love what you do. If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it."</p>
+        <p style="font-size:50px; font-weight:bold;">STEVE JOBS (1955-2011)
+        <p style="font-size:25px; font-weight:bold;">Inventor | Co-founder of Apple</p>
+        <p style="font-weight:bold;">Steve Jobs co-founded Apple Computers with Steve Wozniak. Under Jobs' guidance, the company pioneered a series of revolutionary technologies, including the iPhone and iPad.</p>
+        <div id="flip"> See More...</div>
+        <div id="panel"> Steven Paul Jobs (February 24, 1955 – October 5, 2011) was an American entrepreneur, industrial designer, business magnate, media proprietor, and investor. He was the co-founder, chairman, and CEO of Apple; the chairman and majority shareholder of Pixar; a member of The Walt Disney Company's board of directors following its acquisition of Pixar; and the founder, chairman, and CEO of NeXT. He is widely recognized as a pioneer of the personal computer revolution of the 1970s and 1980s, along with his early business partner and fellow Apple co-founder Steve Wozniak.
+        <br><br>
+
+        Jobs was born in San Francisco to a Syrian father and German-American mother. He was adopted shortly after his birth. Jobs attended Reed College in 1972 before withdrawing that same year. In 1974, he traveled through India seeking enlightenment and studying Zen Buddhism. He and Wozniak co-founded Apple in 1976 to sell Wozniak's Apple I personal computer. Together the duo gained fame and wealth a year later with production and sale of the Apple II, one of the first highly successful mass-produced microcomputers. Jobs saw the commercial potential of the Xerox Alto in 1979, which was mouse-driven and had a graphical user interface (GUI). This led to the development of the unsuccessful Apple Lisa in 1983, followed by the breakthrough Macintosh in 1984, the first mass-produced computer with a GUI. The Macintosh introduced the desktop publishing industry in 1985 with the addition of the Apple LaserWriter, the first laser printer to feature vector graphics. </div></td>
+    </tr>
+  </table><br><br>
+
+  <ol>
+    <li><b>Youth</b></li>
+        <p>Steven Paul Jobs was born on February 24, 1955 in San Francisco, California. His unwed biological parents, Joanne Schieble and Abdulfattah Jandali, put him up for adoption. Steve was adopted by Paul and Clara Jobs, a lower-middle-class couple, who moved to the suburban city of Mountain View a couple of years later.<br>
+
+        The Santa Clara county, south of the Bay Area, became known as Silicon Valley in the early 1950s. At age 13, he met the 18-year-old Stephen Wozniak.
+        <br>
+
+        Five years later, when Steve Jobs reached college age, he enrolled in Reed College. Steve spent only one semester at Reed, then dropped out due to different interests. A few months later, Steve returned to California and was hired at Atari.</p>
+    <li><b> Apple's Origins </b></li>
+        <p>Woz, whose interest in electronics had grown stronger, was regularly attending meetings of a group of early computer hobbyists called the Homebrew Computer Club. They were the real pioneers of personal computing, a collection of radio jammers, computer professionals and enlightened amateurs who gathered to show off their latest prowess in building their own personal computer or writing software. The club started to gain popularity after the Altair 8800 personal computer kit came out in 1975.<br>
+
+        The knowledge that Woz gathered at the Homebrew meetings, as well as his exceptional talent, allowed him to build his own computer board — simply because he wanted a personal computer for himself. Steve Jobs took interest, and he quickly understood that his friend's brilliant invention could be sold to software hobbyists, who wanted to write software without the hassle of assembling a computer kit. Jobs convinced Wozniak to start a company for that purpose: Apple Computer was born on April 1, 1976.<br>
+
+        The following months were spent assembling boards of Apple I computers in the Jobses' garage, and selling them to independent computer dealers in the area. However, Wozniak had started work on a much better computer, the Apple II — an expandable, much more powerful system that supported color graphics. Jobs and Wozniak knew deep down it could be hugely successful, and therefore Jobs started to seek venture capital. He eventually convinced former Intel executive turned business angel Mike Markkula to invest $250,000 in Apple, in January 1977. Markkula was a big believer in the personal computing revolution, and he said to the young founders that, thanks to the Apple II, their company could be one of the Fortune 500 in less than two years.</p>
+    <li><b>Apple Inc.</b></li>
+        <p>iPod made Steve Jobs realize that Apple could become the greatest consumer electronics company on the planet. Around 2003, he started a secret project to develop a tablet. But in 2004-2005, he realized that the technology that this group had developed, including a revolutionary touch-screen technology, could be used in a phone rather than a tablet. After two more years of development, including a harsh internal competition to prove that it was possible to make Mac OS X run on the phone, iPhone was introduced at Macworld on January 9, 2007. This keynote is often considered the best and most memorable of all of Steve Jobs's career.<br>
+
+        iPhone was not only a breakthrough digital convergence device ("an iPod, a phone, and an Internet communicator" all in one), it was also a force of disruption of the traditional phone business. Just like for the iTunes Store, Steve Jobs had negotiated landmark deals with wireless carrier AT&T before he introduced iPhone — without ever showing it to them! In exchange for exclusivity, the carrier would pay Apple a share of all their iPhone subscription revenues. And of course, AT&T could not put any software on the iPhone, and no logo either. This was an inversion of the traditional master-slave relationship that carriers entertained with phone manufacturers. In the long run, it really put the phone industry upside down.<br>
+
+ 
+        The original iPhone was successful already: despite its $399 price tag, Apple sold 6 million of them during its existence. But sales really started to skyrocket in 2008, after Apple introduced the cheaper iPhone 3G (at a subsidized $199 price) and the App Store. Just like the Windows-compatible iPod, Steve Jobs was originally opposed to letting third-party software on the iPhone. But the demand was so high that he eventually relented, and introduced the iPhone SDK and the App Store in March 2008.<br>
+
+        It is impossible to overestimate the impact of the iPhone App Store, which ushered in a new era in mobile software. Thousands of developers started writing apps for the iPhone platform, which became a competitive advantage for Apple that no other company has been able to catch up with to this day. Apple proudly showed off this rich choice of software in its TV ad campaign 'There's an app for that' that ran for over two years.</p>
+    <li><b>Health concerns</b></li>
+        <p>Unfortunately, while he had never been so successful professionally, Steve Jobs had to start fighting cancer with renewed intensity.<br>
+
+        In late 2003, he had been diagnosed with pancreatic cancer of a rare kind, that could potentially be cured by surgery. However, against everyone's advice, he refused to have the surgery for nine long months. Instead, true to the ideals of his youth, he tried alternative diets and treatments, including acupuncture and seeing a psychic. Only in July 2004 did he agree to have the surgery. He looked healthy for the next five years, and spoke publicly of being 'cured' of cancer at his famous Stanford speech in 2005.<br>
+
+        Yet at the WWDC keynote in June 2008, few observers failed to notice how thin he appeared on stage, and concerns about his health started popping up again. They became increasingly frequent until December 2008, when Apple made a shocking announcement that Jobs would not be the keynote speaker at Macworld 2009, and that he was taking a medical leave of absence for six months. Although he publicly denied it, the truth was of course that his cancer had come back. He was actually weeks away from death when he received a liver transplant in April 2009. But he came back to Apple, as planned, in late summer 2009, healthier though still very frail in appearance. He was eager to bring the finishing touches to a new project very dear to his heart.</p>
+  </ol><br><br>
+  <center>
+  <table1>
+    <tr>
+      <td><pre> "You can’t connect the dots <br>
+  looking forward; you can only <br>
+  connect them looking <br>
+  backward. So you have to trust <br>
+  that the dots will somehow <br>
+  connect in your future."<br>
+                                 -Steve Jobs- </pre></td>
+      </tr>
+    </table1></center>
+
+     <footer>
+     <marquee behavior="scroll" direction="right" scrollamount="12">
+     <p><b>STEVE JOBS (1955-2011) | Co-founder of Apple</b> </p>
+     </footer>
+
+  <script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+ 
+</script>
+
+ 
+
+
+</body>
+</html>
